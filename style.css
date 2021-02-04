@@ -71,3 +71,42 @@ img {
 .clear {
   clear: both;
 }
+
+
+/* Correzione visualizzazione con smatphone o tablet */
+@media screen and (max-width: 420px) {
+
+  #lezioni,
+  #steps,
+  #why{
+    font-size: 25px;
+  }
+
+
+  /* CORREZIONE LEZIONE */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 40%;
+    float: none;
+    margin: 10px auto;
+  }
+
+
+  /* CORREZIONE STEPS */
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+
+  /* CORREZIONE WHY */
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 100%;
+    margin: 80px auto;
+  }
+}
